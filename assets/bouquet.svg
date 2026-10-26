@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="620" viewBox="0 0 540 620" fill="none">
+<defs>
+ <g id="leaf"><path d="M0 0C-50-4-65-46-62-65-24-63 4-36 0 0Z" fill="#83917b"/><path d="M-3-3-53-55" stroke="#657760" stroke-width="1.5"/></g>
+ <g id="rose"><path d="M0-44C25-67 52-39 45-17 76-4 61 30 39 33 28 66-8 59-20 43-52 53-72 23-54 1-65-30-30-62-12-43Z" fill="#d6a2a5" stroke="#bd858d" stroke-width="1.3"/><path d="M-12-43C-36-17-18 1 8 0 38-3 43-29 25-40M-54 1C-28-9-3 10-7 34M39 33C14 29 0 12 8 0M-20 43C-22 21-10 2 8 0M-12-19C4-34 27-18 19 0 13 13-9 17-16 2-21-7-14-15-5-15 7-16 12-6 8 0" stroke="#a76878" stroke-width="1.5"/><path d="M-37-24C-40-11-30-6-25-6M34 14C45 9 48 1 46-5M2 43C17 46 24 39 28 34" stroke="#f4d6cf" stroke-width="2"/></g>
+ <g id="small"><path d="M0-20C13-37 30-17 20-6 42-5 34 18 19 16 21 37-7 36-10 18-30 30-42 5-23-5-37-19-15-35 0-20Z" fill="#e4b6b2" stroke="#ba8a8b"/><circle r="7" fill="#b18b5d"/><circle r="3" fill="#e9d3a4"/></g>
+</defs>
+<g stroke="#71816a" stroke-width="3" stroke-linecap="round">
+ <path d="M278 551Q228 340 148 160M278 551Q274 280 276 108M278 551Q334 340 406 211M278 551Q184 305 113 291M278 551Q360 297 384 114M278 551Q209 291 214 218M278 551Q321 292 331 245"/>
+</g>
+<use href="#leaf" transform="translate(246 390) rotate(-25) scale(1.1)"/><use href="#leaf" transform="translate(296 398) rotate(115) scale(1.15)"/>
+<use href="#leaf" transform="translate(217 317) rotate(-40)"/><use href="#leaf" transform="translate(329 304) rotate(110)"/>
+<use href="#leaf" transform="translate(177 231) rotate(-45) scale(.8)"/><use href="#leaf" transform="translate(282 234) rotate(60) scale(.9)"/>
+<use href="#leaf" transform="translate(356 228) rotate(120) scale(.9)"/><use href="#leaf" transform="translate(222 423) rotate(-80) scale(.9)"/>
+<use href="#leaf" transform="translate(299 459) rotate(135) scale(.8)"/><use href="#leaf" transform="translate(260 204) rotate(-13) scale(.8)"/>
+<use href="#rose" transform="translate(150 156) rotate(-25) scale(1.05)"/>
+<use href="#rose" transform="translate(278 108) rotate(20) scale(.9)"/>
+<use href="#rose" transform="translate(405 210) rotate(60) scale(.95)"/>
+<use href="#rose" transform="translate(219 247) rotate(14) scale(1.15)"/>
+<use href="#rose" transform="translate(326 301) rotate(-30) scale(.9)"/>
+<use href="#small" transform="translate(383 112) rotate(-20)"/>
+<use href="#small" transform="translate(111 290) rotate(-30) scale(.9)"/>
+<use href="#small" transform="translate(317 199) rotate(25) scale(.7)"/>
+<g fill="#f1ddd0" stroke="#a1a187" stroke-width=".8">
+ <circle cx="92" cy="211" r="6"/><circle cx="106" cy="195" r="5"/><circle cx="89" cy="183" r="5"/><circle cx="365" cy="359" r="6"/><circle cx="380" cy="343" r="5"/><circle cx="388" cy="364" r="5"/><circle cx="212" cy="105" r="5"/><circle cx="205" cy="87" r="5"/>
+</g>
+<path d="M276 470C234 434 190 433 197 460 204 483 245 476 276 470ZM276 470C304 426 350 433 341 456 335 478 303 479 276 470Z" fill="#b26979" stroke="#925267" stroke-width="1.5"/>
+<path d="M270 477C259 507 246 535 229 554L247 551 254 564C264 535 276 504 281 478M281 475C285 514 310 535 334 541L324 523 337 521C310 511 300 491 288 473" fill="#b26979" stroke="#925267" stroke-width="1.5"/>
+<ellipse cx="279" cy="473" rx="12" ry="10" fill="#945569"/>
+</svg>
