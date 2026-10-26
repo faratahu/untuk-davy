@@ -9,35 +9,59 @@
   <link rel="preconnect" href="https://api.fontshare.com">
   <link href="https://api.fontshare.com/v2/css?f[]=boska@400,500&f[]=satoshi@400,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./base.css">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css?v=2">
+  <script src="./app.js?v=2" defer></script>
 </head>
 <body>
-  <a class="skip" href="#surat">Langsung ke surat</a>
+  <a class="skip" href="#buka">Langsung ke tombol buka surat</a>
   <main>
     <div class="topline"><span>Untuk Davy Wahyu Saputra</span><span>Dengan sepenuh hati</span></div>
-    <section class="cover" aria-labelledby="title">
+    <section class="cover" aria-labelledby="title" id="cover">
       <div class="intro">
         <p class="eyebrow">Sepucuk surat untukmu</p>
         <h1 id="title">Halo davy,<br>selamat pagii.</h1>
         <p class="dedication">Davy Wahyu Saputra</p>
-        <a class="open-letter" href="#surat">Buka suratku <span aria-hidden="true">↗</span></a>
+        <button class="open-letter" id="buka" type="button" aria-expanded="false" aria-controls="surat">Buka suratku <span aria-hidden="true">↗</span></button>
       </div>
-      <figure class="bouquet">
-        <img src="./assets/bouquet.svg" alt="Buket bunga merah muda dengan daun hijau dan pita merah, khusus untuk Davy." width="540" height="620">
-      </figure>
-      <span class="cover-note">i wannaaa be with u foreverrr</span>
+      <div class="envelope-scene">
+        <div class="envelope" id="envelope">
+          <div class="envelope-back"></div>
+          <div class="envelope-paper"><img src="./assets/bouquet.svg" alt="" width="160" height="184"><span>Untuk kamu, Davy.</span></div>
+          <div class="envelope-front"></div>
+          <div class="envelope-flap"></div>
+          <button class="seal" id="seal" type="button" aria-label="Buka amplop untuk Davy" aria-expanded="false" aria-controls="surat">
+            <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path d="M16 27S3 19 3 10a7 7 0 0 1 13-3 7 7 0 0 1 13 3c0 9-13 17-13 17Z" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+          </button>
+          <span class="envelope-address">Davy Wahyu Saputra</span>
+        </div>
+        <p class="envelope-hint" id="envelope-hint">Ketuk segelnya untuk membuka</p>
+      </div>
+      <span class="cover-note">Dari Pacarmu yang cantik nan imut Fara</span>
     </section>
-    <article class="letter" id="surat" tabindex="-1" aria-labelledby="letter-title">
+    <article class="letter" id="surat" tabindex="-1" aria-labelledby="letter-title" hidden>
       <div class="letter-top"><span>Untuk kamu,</span><svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><path d="M16 27S3 19 3 10a7 7 0 0 1 13-3 7 7 0 0 1 13 3c0 9-13 17-13 17Z" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></div>
       <h2 id="letter-title">Davy Wahyu Saputra</h2>
       <div class="message">
         <p>Halo davy selamat pagii, maaf menganggu waktunya, aku cuma bilang thank u for today and making me so proud of my self even thought ur not here, but i still feel thah u r already herere.</p>
         <p>Don't forget to sholat tepat waktuu, and selalu baikk sama semua orang. Don't blame ur self, always respected people.</p>
-        <p>I'm ver proudd of u, i don't fuckin care who u are, what's ur background, i wannaaa be with u foreverrr, tell em that u r kindd and sweet :)</p>
+        <p>I'm very proudd of u, i don't fuckin care who u are, what's ur background, tell em that u r kindd and sweet :)</p>
       </div>
-      <div class="signoff"><span>i wannaaa be with u foreverrr</span><img src="./assets/bouquet.svg" alt="" width="96" height="110" loading="lazy"></div>
+      <div class="signoff"><span>Dari Pacarmu yang cantik nan imut Fara</span><img src="./assets/bouquet.svg" alt="" width="96" height="110" loading="lazy"></div>
     </article>
-    <footer><span>Untuk Davy, dengan cinta.</span><a href="#title">Baca dari awal <span aria-hidden="true">↑</span></a></footer>
+    <section class="music" id="music" aria-labelledby="music-title" hidden>
+      <div class="music-copy">
+        <p class="eyebrow">Musik untuk menemani suratmu</p>
+        <h2 id="music-title">Indecision</h2>
+        <p>Rex Orange County feat. Daniel Caesar</p>
+        <p class="music-note" id="music-status" role="status">Jika musik belum terdengar, tekan Play pada pemutar.</p>
+        <a href="https://www.youtube.com/watch?v=uh0SpzMsZAs" target="_blank" rel="noopener noreferrer">Buka di YouTube ↗</a>
+        <button class="copy-link" id="copy-song" type="button">Salin tautan lagu</button>
+        <p class="song-url">https://www.youtube.com/watch?v=uh0SpzMsZAs</p>
+      </div>
+      <div class="player-slot" id="player-slot"></div>
+    </section>
+    <footer><span>Untuk Davy, dengan cinta.</span><button class="close-letter" id="tutup" type="button" hidden>Tutup amplop ↑</button></footer>
   </main>
+  <noscript><p class="no-script">Aktifkan JavaScript untuk membuka animasi amplop dan membaca surat.</p></noscript>
 </body>
 </html>
